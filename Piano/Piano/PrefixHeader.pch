@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  MWallet
+//
+//  Created by jordan.Li on 15/10/20.
+//  Copyright © 2015年 jordan.Li. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define UI_NAVIGATION_BAR_HEIGHT        44
+#define UI_TAB_BAR_HEIGHT               49
+#define UI_STATUS_BAR_HEIGHT            20
+#define UI_SCREEN_WIDTH                 ([[UIScreen mainScreen] bounds].size.width)
+#define UI_SCREEN_HEIGHT                ([[UIScreen mainScreen] bounds].size.height)
+
+typedef enum
+{
+    //以下是枚举成员
+    PianoMusic_zhiAiLisi = 1, //至爱丽丝
+    PianoMusic_tongNian =2, //童年
+    PianoMusic_daHai =2,//大海
+    PianoMusic_tongZuoDeNi =3,//同桌的你
+    PianoMusic_yinWeiAiQingi =4,//因为爱情
+    PianoMusic_hongDou =5,//红豆
+    PianoMusic_liangZhiLaoHu =6,//两只老虎
+    PianoMusic_shengRiKuaiLe =7,//生日快乐
+    PianoMusic_tBingYu =8,//冰雨
+    PianoMusic_yueLiangDaiBiao =9,//月亮代表我的心
+    PianoMusic_mengZhongDeHunLi =10,//梦中的婚礼
+    PianoMusic_kaNong =11,//卡农
+    PianoMusic_yuDeYinJi =12,//雨的印记
+    PianoMusic_moSiKe =13,//莫斯科郊外的晚上
+    PianoMusic_yEdeGangQingQu5 =14,//夜的钢琴曲5
+    PianoMusic_qiuRiSiYu =15,//秋日私语
+    PianoMusic_yiQianGeShangXin = 16, //一千个伤心的理由
+    PianoMusic_soundtest12 = 17,
+}PianoMusic;//枚举名称
+
+#define kUMAppKey  @"543a70cbfd98c54d1f052953"              //友盟统计
+
+#import "InnerBandCore.h"
+
+#endif /* PrefixHeader_pch */
