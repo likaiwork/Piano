@@ -39,7 +39,7 @@
     [_whiteView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:_whiteView];
     [self addWhiteButton];
-    [self addImage];
+    [self addSetingImage];
     self.navigationController.navigationBar.hidden = YES;
 }
 
@@ -93,61 +93,8 @@
     }
 }
 
--(void)addblackButton
-{
-    for(int i = 0;i<14;i++)
-    {
-        UIButton * blackButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [blackButton.layer setCornerRadius:5.0]; //设置矩形四个圆角半径
-        
-        if(i==0)
-        {
-            [blackButton setFrame:CGRectMake(61/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==1)
-        {
-            [blackButton setFrame:CGRectMake(142/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==2)
-        {
-            [blackButton setFrame:CGRectMake(302/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==3)
-        {
-            [blackButton setFrame:CGRectMake(383/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==4)
-        {
-            [blackButton setFrame:CGRectMake(464/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==5)
-        {
-            [blackButton setFrame:CGRectMake(624/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==6)
-        {
-            [blackButton setFrame:CGRectMake(705/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==7)
-        {
-            [blackButton setFrame:CGRectMake(865/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==8)
-        {
-            [blackButton setFrame:CGRectMake(946/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        else if(i==9)
-        {
-            [blackButton setFrame:CGRectMake(1027/2, UI_SCREEN_HEIGHT - 130, 27, 71)];
-        }
-        [blackButton setBackgroundImage:[UIImage imageNamed:@"黑键.png"] forState:UIControlStateNormal];
-        [blackButton setBackgroundImage:[UIImage imageNamed:@"黑键按下.png"] forState:UIControlStateHighlighted];
-        [blackButton addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:blackButton];
-    }
-}
 
--(void)addImage
+-(void)addSetingImage
 {
     UIButton * musicButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [musicButton setBackgroundImage:[UIImage imageNamed:@"音乐.png"] forState:UIControlStateNormal];
