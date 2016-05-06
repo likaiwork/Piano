@@ -54,13 +54,13 @@
 
 @interface SoundPlay : NSObject
 {
-    int _musicScoreSign;
+    int musicScoreSign;
 }
 
 + (id)sharedInstance;
 
 - (void)playSoundKeytoneByMusicScore:(PianoMusic)key;
 
-@property (nonatomic, retain) NSDate *_prePlayDate;
+@property (nonatomic, retain) NSDate * prePlayDate;
 
 @end

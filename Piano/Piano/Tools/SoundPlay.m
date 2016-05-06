@@ -27,14 +27,14 @@ static SoundPlay *g_ptrSoundPlay = nil;
 - (void)playSoundKeytoneByMusicScore:(PianoMusic) pianoMusic
 {
     NSDate *now = [[NSDate alloc] init];
-    if (self._prePlayDate==nil)
+    if (self.prePlayDate==nil)
     {
-        self._prePlayDate = now;
+        self.prePlayDate = now;
     }
     else
-        if ([now timeIntervalSinceDate:self._prePlayDate] > 0.12)
+        if ([now timeIntervalSinceDate:self.prePlayDate] > 0.12)
         {
-            self._prePlayDate = now;
+            self.prePlayDate = now;
         }
         else
         {
@@ -120,7 +120,14 @@ static SoundPlay *g_ptrSoundPlay = nil;
     }
     
     NSArray *subStr=[fileStr componentsSeparatedByString:@":"];
-    NSString *numString=[subStr objectAtIndex:_musicScoreSign];
+    NSString *numString = @"";
+    if([subStr count]>musicScoreSign){
+        numString=[subStr objectAtIndex:musicScoreSign];
+    }else{
+        musicScoreSign = 0;
+        numString=[subStr objectAtIndex:musicScoreSign];
+    }
+    
     
     if ([numString rangeOfString:@"."].location != NSNotFound)
     {
@@ -165,13 +172,13 @@ static SoundPlay *g_ptrSoundPlay = nil;
         AudioServicesPlaySystemSound(soundID);
     }
     
-    if (_musicScoreSign>=[subStr count]-1)
+    if (musicScoreSign>=[subStr count]-1)
     {
-        _musicScoreSign=0;
+        musicScoreSign=0;
     }
     else
     {
-        _musicScoreSign=_musicScoreSign+1;//游标向后移动
+        musicScoreSign=musicScoreSign+1;//游标向后移动
     }
 }
 
