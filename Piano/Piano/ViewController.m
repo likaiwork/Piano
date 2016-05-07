@@ -117,7 +117,7 @@
 }
 
 - (void)shareAction {
-    NSURL *urlToShare = [NSURL URLWithString:@"https://itunes.apple.com/us/app/gang-qin-piano/id1102200208?l=zh&ls=1&mt=8"];
+    NSURL *urlToShare = [NSURL URLWithString:Share_Url];
     
     NSArray *activityItems = @[urlToShare];
     
@@ -185,8 +185,7 @@
             NSString * actionTitle = [actionSheet buttonTitleAtIndex:[buttonIndex integerValue]];
             if([actionTitle isEqual:NSLocalizedString(@"Rage Us", nil)])
             {
-                //[[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/gang-qin-piano/id1102200208?l=zh&ls=1&mt=8"]];
-                [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=id1102200208"]];
+                [[UIApplication sharedApplication]openURL:[NSURL URLWithString:Comment_Url]];
             }
             else if([actionTitle isEqual:NSLocalizedString(@"Share To Friends", nil)])
             {
@@ -257,7 +256,6 @@
             }
         }];
     }
-    
 }
 
  

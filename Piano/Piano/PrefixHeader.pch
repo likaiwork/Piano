@@ -43,4 +43,8 @@ typedef enum
 
 #import "InnerBandCore.h"
 
+#define Share_Url  @"https://itunes.apple.com/us/app/gang-qin-piano/id1102200208?l=zh&ls=1&mt=8"
+
+#define Comment_Url  @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1102200208"
+
 #endif /* PrefixHeader_pch */
