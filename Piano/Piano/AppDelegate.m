@@ -24,6 +24,7 @@
     [UMSocialData setAppKey:kUMAppKey];
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     [MobClick setAppVersion:version];
+    
     return YES;
 }
 
