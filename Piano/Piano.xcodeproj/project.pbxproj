@@ -107,6 +107,8 @@
 		521F826B1C48C6F0006B88C4 /* SoundPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F826A1C48C6F0006B88C4 /* SoundPlay.m */; };
 		521F826E1C48CFA8006B88C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521F82701C48CFA8006B88C4 /* Localizable.strings */; };
 		63E79B4DFE0903D1968B3F4F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A3A835F7A1BB03A8A15EEE /* libPods.a */; };
+		FA1A1FDF1CE4320C00046A9F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1A1FDE1CE4320C00046A9F /* SafariServices.framework */; };
+		FA1A1FE11CE4321100046A9F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1A1FE01CE4321100046A9F /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +244,8 @@
 		521F82731C48D044006B88C4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		84A3A835F7A1BB03A8A15EEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0382E8D19FB59C5CCD2EFBE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA1A1FDE1CE4320C00046A9F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		FA1A1FE01CE4321100046A9F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1A1FE11CE4321100046A9F /* CoreBluetooth.framework in Frameworks */,
+				FA1A1FDF1CE4320C00046A9F /* SafariServices.framework in Frameworks */,
 				63E79B4DFE0903D1968B3F4F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +470,8 @@
 		65C5794BE7A62647A635BFC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA1A1FE01CE4321100046A9F /* CoreBluetooth.framework */,
+				FA1A1FDE1CE4320C00046A9F /* SafariServices.framework */,
 				84A3A835F7A1BB03A8A15EEE /* libPods.a */,
 			);
 			name = Frameworks;
@@ -479,8 +487,8 @@
 				6CA9DBC38B1893E39BB548FC /* Check Pods Manifest.lock */,
 				521F81731C48AA35006B88C4 /* Sources */,
 				521F81741C48AA35006B88C4 /* Frameworks */,
-				521F81751C48AA35006B88C4 /* Resources */,
 				23330C98B861B954361DCFC1 /* Embed Pods Frameworks */,
+				521F81751C48AA35006B88C4 /* Resources */,
 				4A422D49A2DDD9197C9B29C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -819,8 +827,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CAI HUI (246T423485)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CAI HUI (246T423485)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 学盼 蔡 (4MM84KKEP9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 学盼 蔡 (4MM84KKEP9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -842,7 +850,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "47ca1c96-4adf-484c-b4b7-2866a1f4c343";
+				PROVISIONING_PROFILE = "f1e9f1e3-047c-409e-b564-ed0fbe67d53e";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -865,8 +873,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CAI HUI (246T423485)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CAI HUI (246T423485)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 学盼 蔡 (4MM84KKEP9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 学盼 蔡 (4MM84KKEP9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -881,7 +889,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "47ca1c96-4adf-484c-b4b7-2866a1f4c343";
+				PROVISIONING_PROFILE = "f1e9f1e3-047c-409e-b564-ed0fbe67d53e";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -897,6 +905,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Piano/PrefixHeader.pch";
 				INFOPLIST_FILE = Piano/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -917,6 +929,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Piano/PrefixHeader.pch";
 				INFOPLIST_FILE = Piano/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

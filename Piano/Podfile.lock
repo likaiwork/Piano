@@ -1,4 +1,5 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.8.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -10,11 +11,13 @@ PODS:
   - UMengSocial (4.4)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK (~> 7.0)
   - ReactiveCocoa
   - UMengAnalytics-NO-IDFA
   - UMengSocial (~> 4.3)
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 36b88dd2373f0ee4583e65971cb07b6965c29eef
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
