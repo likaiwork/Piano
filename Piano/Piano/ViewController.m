@@ -47,7 +47,7 @@
     [self.view addSubview:_whiteView];
     [self addWhiteButton];
     [self addSetingImage];
-    [self loadBannerAdamob];
+    //[self loadBannerAdamob];
     self.navigationController.navigationBar.hidden = YES;
     self.interstitial = [self createAndLoadInterstitial];
     
