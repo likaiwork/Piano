@@ -14,14 +14,6 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2011 Google Inc. All Rights Reserved.</string>
-			<key>Title</key>
-			<string>Google-Mobile-Ads-SDK</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>**Copyright (c) 2012 - 2015, GitHub, Inc.**
 **All rights reserved.**
 
@@ -53,15 +45,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </string>
 			<key>Title</key>
 			<string>UMengAnalytics-NO-IDFA</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright 2011 - 2015 UMeng.com. All rights reserved.
-</string>
-			<key>Title</key>
-			<string>UMengSocial</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

@@ -10,18 +10,18 @@
 #import "SoundPlay.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <MessageUI/MessageUI.h>
-@import GoogleMobileAds;
+//@import GoogleMobileAds;
 
 
-@interface ViewController ()<MFMailComposeViewControllerDelegate,GADInterstitialDelegate>
+@interface ViewController ()<MFMailComposeViewControllerDelegate>//GADInterstitialDelegate
 
 @property (assign, nonatomic) PianoMusic painoMusic;
 
 @property (strong,nonatomic) UIView * whiteView;
 
-@property (strong, nonatomic) GADBannerView  *bannerView;
+//@property (strong, nonatomic) GADBannerView  *bannerView;
 
-@property(nonatomic, strong) GADInterstitial *interstitial;
+//@property(nonatomic, strong) GADInterstitial *interstitial;
 
 @end
 
@@ -49,49 +49,42 @@
     [self addSetingImage];
     //[self loadBannerAdamob];
     self.navigationController.navigationBar.hidden = YES;
-    self.interstitial = [self createAndLoadInterstitial];
+//    self.interstitial = [self createAndLoadInterstitial];
     
 }
 
--(void)loadBannerAdamob
-{
-    self.bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, 0.0, UI_SCREEN_WIDTH, 50.0f)];
-    [_whiteView addSubview:self.bannerView];
-    
-    self.bannerView.adUnitID = @"ca-app-pub-2144172051563531/2681917209";
-    self.bannerView.rootViewController = self;
-    GADRequest *request = [GADRequest request];
- 
-    [self.bannerView loadRequest:request];
-    
-}
-
-//-(void)loadInterstitialAdmob{
-//    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-2144172051563531/6001983601"];
+//-(void)loadBannerAdamob
+//{
+//    self.bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, 0.0, UI_SCREEN_WIDTH, 50.0f)];
+//    [_whiteView addSubview:self.bannerView];
 //    
+//    self.bannerView.adUnitID = @"ca-app-pub-2144172051563531/2681917209";
+//    self.bannerView.rootViewController = self;
 //    GADRequest *request = [GADRequest request];
-//    // Requests test ads on test devices.
 // 
-//    [self.interstitial loadRequest:request];
+//    [self.bannerView loadRequest:request];
+//    
 //}
 
-- (GADInterstitial *)createAndLoadInterstitial {
-    GADInterstitial *interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-2144172051563531/6001983601"];
-    interstitial.delegate = self;
-    [interstitial loadRequest:[GADRequest request]];
-    return interstitial;
-}
 
-- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
-    self.interstitial = [self createAndLoadInterstitial];
-}
 
-- (void)gameOver {
-    if ([self.interstitial isReady]) {
-        [self.interstitial presentFromRootViewController:self];
-    }
-    // Rest of game over logic goes here.
-}
+//- (GADInterstitial *)createAndLoadInterstitial {
+//    GADInterstitial *interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-2144172051563531/6001983601"];
+//    interstitial.delegate = self;
+//    [interstitial loadRequest:[GADRequest request]];
+//    return interstitial;
+//}
+//
+//- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
+//    self.interstitial = [self createAndLoadInterstitial];
+//}
+//
+//- (void)gameOver {
+//    if ([self.interstitial isReady]) {
+//        [self.interstitial presentFromRootViewController:self];
+//    }
+//    // Rest of game over logic goes here.
+//}
 
 -(void)addWhiteButton
 {
@@ -150,7 +143,7 @@
     [musicButton setBackgroundImage:[UIImage imageNamed:@"音乐.png"] forState:UIControlStateNormal];
     [musicButton setFrame:CGRectMake(15, 154, 35, 35)];
     musicButton.tag = 1;
-    [musicButton addTarget:self action:@selector(setButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    //[musicButton addTarget:self action:@selector(setButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:musicButton];
  
     
@@ -227,7 +220,7 @@
                                       delegate:self
                                       cancelButtonTitle:NSLocalizedString(@"Cancel Str", nil)
                                       destructiveButtonTitle:nil
-                                      otherButtonTitles:NSLocalizedString(@"Rage Us", nil),NSLocalizedString(@"Share To Friends", nil),NSLocalizedString(@"Feedback", nil),NSLocalizedString(@"Game", nil),nil];
+                                      otherButtonTitles:NSLocalizedString(@"Rage Us", nil),NSLocalizedString(@"Share To Friends", nil),NSLocalizedString(@"Feedback", nil),nil];// ,NSLocalizedString(@"Game", nil)
         actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
         [actionSheet showInView:self.view];
         
@@ -261,7 +254,7 @@
                 // 5.呼出发送视图
                 [self presentViewController:mailViewController animated:YES completion:nil];
             }else if([actionTitle isEqual:NSLocalizedString(@"Game", nil)]){
-                [weakSelf gameOver];
+                //[weakSelf gameOver];
             }
             
         }];

@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "UMSocialWechatHandler.h"
-#import "UMSocialSinaHandler.h"
-#import "UMSocial.h"
+//#import "UMSocialWechatHandler.h"
+//#import "UMSocialSinaHandler.h"
+//#import "UMSocial.h"
 #import "MobClick.h"
 
 @interface AppDelegate ()
@@ -21,8 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [UMSocialData setAppKey:kUMAppKey];
+//    [UMSocialData setAppKey:kUMAppKey];
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick startWithAppkey:kUMAppKey];
     [MobClick setAppVersion:version];
     
     return YES;

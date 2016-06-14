@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Google-Mobile-Ads-SDK
-
-Copyright 2011 Google Inc. All Rights Reserved.
-
 ## ReactiveCocoa
 
 **Copyright (c) 2012 - 2015, GitHub, Inc.**
@@ -29,11 +25,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ## UMengAnalytics-NO-IDFA
-
-Copyright 2011 - 2015 UMeng.com. All rights reserved.
-
-
-## UMengSocial
 
 Copyright 2011 - 2015 UMeng.com. All rights reserved.
 
