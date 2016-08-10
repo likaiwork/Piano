@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-//#import "UMSocialWechatHandler.h"
-//#import "UMSocialSinaHandler.h"
-//#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
+#import "UMSocialSinaHandler.h"
+#import "UMSocial.h"
 #import "MobClick.h"
 
 @interface AppDelegate ()

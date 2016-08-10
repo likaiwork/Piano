@@ -10,4 +10,10 @@
 
 @interface ParentsControlVC : UIViewController
 
+@property (nonatomic,weak) IBOutlet UILabel * titleLabel;
+@property (nonatomic,weak) IBOutlet UILabel * contentLabel;
+@property (nonatomic,weak) IBOutlet UITextField * uitextField;
+@property (nonatomic,weak) IBOutlet UIButton * uiButton;
+
+@property (nonatomic,copy) void (^buttonClick)(void);
 @end
